@@ -1,5 +1,5 @@
 # MultiFunctionalitySite 
-APPS Functionalities -
+# APPS Functionalities -
 Chat App
 TextUtils App
 Snake Game
@@ -11,3 +11,5 @@ Note Taken App
 Alarm Clock
 Weather App
 Calculator 
+# Authentication functionalities
+This site also provides authentication functionality using JWT(javascript web token). You can login or logout in this site.
