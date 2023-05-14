@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous">
+    <title>Textutils</title>
+    <style>
+        .toggle.ios, .toggle-on.ios, .toggle-off.ios { border-radius: 20rem; }
+        .toggle.ios .toggle-handle { border-radius: 20rem; }
+
+        /* Dark mode  */
+        body.dark-mode {
+  background-color:  #02142e;
+  color: #fff;
+}
+nav{
+  background-color: #0339fb;
+}
+nav.dark-nav{
+  background-color: #112a44;
+}
+textarea.dark-textarea{
+  box-shadow: 2px 2px 6px #a3caeb, -2px -2px 6px #a3caeb;
+}
+      </style>
+  </head>
+  <body>
+
+      <!-- Navbar start from here -->
+
+      <nav class="navbar navbar-expand-lg navbar-dark ">
+        <a class="navbar-brand" href="/textutils">Textutils</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            
+          </ul>
+          <button id="dark-mode-toggle" class="btn btn-outline-success mx-2 my-2" >Change mode</button>
+
+          <!-- <input type="checkbox" checked data-toggle="toggle" data-style="ios"> -->
+      
+        </div>
+      </nav>
+          <!-- Navbar end from here -->
+
+
+    <div class="form-group mx-5 my-5 mx-auto " style="width: 80%;">
+      <h2 for="exampleFormControlTextarea3 " class="my-5 mx-4">Try Textutils,
+        Word Counter, Remove Extra Space, Character Counter</h2>
+      <textarea class="form-control my-box" id="exampleFormControlTextarea3"
+        rows="7" cols="8"></textarea>
+    </div>
+    <div class="mx-5 mx-auto" style="width: 80%;">
+      <button type="button" class="btn btn-primary mx-2 my-2 btn-Upper">Convert
+        to Uppercase</button>
+      <button type="button" class="btn btn-primary mx-2 my-2 btn-Lower">Convert
+        to Lowercase</button>
+      <button type="button" class="btn btn-primary mx-2 my-2 btn-Clear">Clear
+        All Data</button>
+      <button type="button" class="btn btn-primary mx-2 my-2 btn-Space">Remove
+        Extra Space</button>
+      <button type="button" class="btn btn-primary mx-2 my-2 btn-Line">Remove
+        LineSpace</button>
+      <button type="button" class="btn btn-primary mx-2 my-2 btn-Copy">Copy Text</button>
+    </div>
+
+
+    <div class="container my-3 mx-5 mx-auto" style="width: 80%;">
+      <h2>Your text summery</h2>
+      <p class="wordCounter"> 0 words , 0 space and 0 characters</p>
+      <p class="reading"> 0 Minutes read</p>
+      <h2>Previews</h2>
+      <p class="preview"> Nothing to preview here </p>
+
+    </div>
+  </body>
+  <script src="/js/textutils.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+</html>

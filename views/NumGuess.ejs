@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Number Guessing Game</title>
+	<link rel="stylesheet" type="text/css" href="/css/NumGuess.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
+</head>
+<body>
+	<div class="container">
+		<h1>Number Guessing Game</h1>
+		<p>Guess a number between 1 and 100. You have 10 guesses.</p>
+		<div class="input-wrapper">
+			<input type="number" id="guess" placeholder="Enter your guess...">
+			<button id="guessButton">Guess</button>
+		</div>
+		<p id="result"></p>
+		<p class="remaining-guesses">Remaining guesses: <span id="remaining-guesses">10</span></p>
+		<button id="restart">Play Again</button>
+	</div>
+
+	<!-- making home link to go to home page -->
+	<div class="abc" style="display: flex; justify-content: center; align-items: center; margin: 15px;">
+		<a href="/" style="background-color: rgb(16, 140, 211); padding: 5px; border-radius: 6px;"><i class="fa-solid fa-house" style="color: #fff;"> Go To Home </i></a>
+		
+	  </div>
+	<script type="text/javascript" src="/js/NumGuess.js"></script>
+</body>
+</html>

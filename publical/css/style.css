@@ -1,0 +1,737 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+/* font-family: 'Dongle', sans-serif;
+font-family: 'Oswald', sans-serif;*/
+/* font-family: 'Poppins', sans-serif; */
+/*font-family: 'Roboto', sans-serif;
+font-family: 'Satisfy', cursive;
+font-family: 'Ubuntu Mono', monospace; */
+}
+/* Custom Scrollbar CSS */
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb{
+    background: #6e93f7;
+    border-radius: 12px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: #4070F4;
+    border-radius: 12px;
+}
+/* navigation menu css */
+nav{
+position: fixed;
+width: 100%;
+padding: 20px 0;
+font-family: 'Ubuntu' , sans-serif;
+
+/* for making navigation sticky this transion is used at here */
+transition: all 0.4s ease; 
+z-index: 998;
+}
+
+
+/* navigation making sticky on scrolling top > 20  */
+nav.sticky{
+    padding: 13px 0;
+    background: #4070F4;
+}
+
+nav .navbar{
+    width: 90%;
+    /* background: red; */
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* flex-direction: row; */
+}
+
+
+nav .navbar .logo a{
+    font-size: 40px;
+    font-weight: 500;
+    /* color:#4070f4; */
+    color: #4070f4;
+}
+/* when we scroll then navbar logo ( Porfolio.) is white */
+
+nav.sticky .navbar .logo a{
+    color: #fff;
+
+}
+nav .navbar .menu{
+    display: flex;
+}
+nav .navbar .menu li{
+    margin: 0 8px;
+    list-style: none;
+}
+
+nav .navbar .menu li a{
+   font-size: 18px;
+   font-size: 500;
+   color: #0E2431;
+   /* color: #fff; */
+   transition: all 0.4s ease;
+
+}
+
+nav .navbar .menu li a:hover{
+  color: #4070F4;
+}
+/* when we scroll then navbar menu list (home ... about....) is white */
+nav.sticky .navbar .menu li a{
+    color: #fff;
+}
+nav.sticky .navbar .menu li a:hover{
+    color: #0E2431;
+}
+
+.navbar .media-icons a{
+    font-size: 18px;
+    margin: 0 6px;
+    color: #4070f4 ;
+}
+
+/* when we scroll then navbar menu icon is white */
+nav.sticky .navbar .media-icons a{
+    color: #fff;
+}
+
+/* side navigation menu button css */
+nav .menu-btn, .navbar .cancel-btn{
+    position: absolute;
+    color: #fff;
+    font-size: 20px;
+    right: 30px;
+    top: 20px;
+    display: none;
+    cursor: pointer;
+}
+
+nav .menu-btn{
+    color: #4070F4;
+}
+nav.sticky .menu-btn{
+    color: #fff;
+}
+/* resposive media  query Css for navigation bar*/
+@media (max-width: 750px){
+    nav .navbar .menu{
+        /* display: flex; */
+        position: absolute;
+        left: -100%;
+        top: 0%;
+        height: 100vh;
+        max-width: 400px;
+        width: 100%;
+        padding-top: 60px;
+        background: #0E2431;
+        flex-direction: column;
+        align-items: center;
+        transition: all 0.5s ease;
+    }
+
+    nav .navbar.active .menu{
+        left: 0%;
+    }
+
+    nav .navbar .menu li a{
+        display: block;
+        margin: 10px 0;
+    font-size: 18px;
+    color: #fff ;
+}
+
+nav.sticky .navbar .menu li a:hover{
+    color: #4070F4;
+}
+
+.navbar .media-icons a{
+display: none;
+}
+
+/* hambarger is block */
+nav .menu-btn, .navbar .cancel-btn{
+    display: block;
+}
+
+}
+
+
+
+/* Home section is start from here */
+
+.home{
+    height: 100vh;
+    width: 100%;
+    /* background: url("https://res.cloudinary.com/practicaldev/image/fetch/s--_HBZhuhF--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://thepracticaldev.s3.amazonaws.com/i/nweeqf97l2md3tlqkjyt.jpg") no-repeat; */
+    background-position: right;
+    background-size:450px;
+    /* background-attachment: fixed; */
+    font-family: 'Ubuntu' , sans-serif;
+
+}
+.home .home-content{
+    height: 100%;
+    width: 90%;
+    /* background: red; */
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.home .text .text-one{
+    font-size: 25px;
+    color: #0E2431;
+
+}
+.home .text .text-two{
+    font-size: 75px;
+    width: 600;
+    font-weight: bold;
+    margin-left: -3px;
+    color: #0E2431;
+
+}
+.home .text .text-three{
+    font-size: 40px;
+    margin: 5px o;
+    color: #0E2431;
+
+}
+.home .text .text-four{
+    font-size: 23px;
+    color: #0E2431;
+
+    
+}
+
+/* home button hire me style at here */
+.home .button{
+    margin: 14px 0;
+}
+.home .button button{
+    outline: none;
+    color: #fff;
+    background: #4070F4;
+    font-size: 25px;
+    padding: 8px 16px;
+    font-weight: 500;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    transition: all 0.4s ease;
+
+}
+.home .button button:hover{
+    color: #4070F4;
+    background-color: #fff;
+    border-color: #4070F4;
+}
+.home button a{
+    color: #fff;
+}
+.home button:hover a{
+    color: #4070F4;
+    background: #fff;
+}
+
+/* for home section media query */
+@media (max-width: 510px){
+
+
+.home .text .text-two{
+    font-size: 55px;
+  
+}
+.home .text .text-three{
+    font-size: 33px;
+    margin: 5px 0;
+}
+
+}
+
+
+/* About Section Css start from here */
+/* those element where we need to apply same css their i will select "Section tag" and class Directly */
+section{
+    padding-top: 40px;
+}
+section .content{
+    width: 80%;
+    margin: 40px auto;
+    /* background: red; */
+    font-family: 'Poppins', sans-serif;
+}
+section .title{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+section .title span{
+    font-size: 30px;
+    font-weight: 600;
+    /* padding-bottom: 4px; */
+    position: relative;
+
+}
+
+section .title span::before,
+section .title span::after{
+   content: '';
+   position: absolute;
+   left: 0%;
+   bottom: 0%;
+   height: 3px;
+   width: 100%;
+   background: #4070F4;
+}
+section .title span::after{
+    width: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -7px;
+}
+
+/* add extra */
+.download-btn{
+    text-decoration: none;
+    color: #fff;
+}
+.download-btn:hover{
+    background: #fff;
+    color: #4070F4;
+}
+/* ---------- */
+
+.about .about-details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.about .about-details .right{
+    width: 45%;
+}
+.about .about-details .right img{
+ height: 400px;
+ width: 400px;
+ object-fit: cover;
+ border-radius: 12px;
+}
+.about .about-details .left{
+    width: 55%;
+}
+section .topic{
+    font-size: 25px;
+    font-weight: 500;
+    color: #0E2431;
+    margin-bottom: 10px;
+
+}
+
+.about-details .left p{
+    color: #0E2431;
+}
+
+/* about button and all type same home button  */
+section .button{
+    margin: 14px 0;
+}
+section .button button{
+    outline: none;
+    color: #fff;
+    background: #4070F4;
+    font-size: 25px;
+    padding: 8px 16px;
+    font-weight: 500;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    transition: all 0.4s ease;
+
+}
+section .button button:hover{
+    color: #4070F4;
+    background-color: #fff;
+    border-color: #4070F4;
+}
+
+/* Reponsive css  ( media query for about section) */
+@media (max-width: 1190px){
+    .about .content{
+        width: 85%;
+    }
+}
+
+@media (max-width: 1090px){
+    .about .about-details{
+       flex-direction: column;
+    }
+
+    .about .about-details .right{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .about .about-details .left{
+        width: 90%;
+        margin: 40px 0;
+    }
+}
+@media (max-width: 971px){
+    .about .about-details .right img{
+        height: 350px;
+        width: 350px;
+    }
+}
+
+
+
+/* My Skills section CSS start From Here */
+.skills{
+    background: #F0F8FF;
+}
+
+.skills .content{
+    padding: 40px 0;
+
+}
+.skills .skill-details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.skills .skill-details .left{
+    width: 50%;
+}
+
+.skill-details .left p{
+    color: #0E2431;
+    text-align: justify;
+}
+.skill-details .left .experience{
+ display: flex;
+ align-items: center;
+}
+.skill-details .left .experience .num{
+    font-size: 80px;
+    font-weight: 500;
+    color: #0E2431;
+}
+.skill-details .left .experience .exp{
+    font-size: 18px;
+    font-weight: 500;
+    color: #0E2431;
+}
+.skills .skill-details .boxes{
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.skills .skill-details .boxes .box{
+    width: calc(100%/2 - 20px);
+}
+.skill-details .boxes .box .topic{
+    font-size: 20px;
+    font-weight: 500;
+    color: #4070F4;
+}
+.skill-details .boxes .box .num{
+    font-size: 60px;
+    color: #4070F4;
+
+}
+.skills .skill-details .left{
+    width: 50%;
+}
+.skills .skill-details .boxes{
+    width: 50%;
+    margin: 40px 30px;
+
+}
+
+/* media query ( Responsiveness) For My Skills section */
+@media (max-width: 1190px){
+    .skills .content{
+        width: 90%;
+    }
+}
+
+@media (max-width: 710px){
+
+.skills .skill-details{
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.skills .skill-details .left{
+    width: 90%;
+}
+.skills .skill-details .boxes{
+    width: 90%;
+    margin: 40px 0px;
+
+}
+
+
+}
+
+
+
+
+/* My services Section start from here */
+.services .boxes{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.services .boxes .box{
+    width: calc(100%/3 - 20px);
+    margin: 20px 0;
+    border-radius: 12px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+    padding: 20px 10px;
+    text-align: center;
+    transition: all 0.4s ease;
+
+
+}
+.services .boxes .box:hover{
+    background: #4070F4;
+    color: #fff;
+}
+
+/* best icon manage code see it  */
+.services .boxes .box .icon{
+    width: 50px;
+    height: 50px;
+    color: #fff;
+    background:#4070F4 ;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    margin: 0 auto 10px auto;
+    transition: all 0.4s ease;
+}
+
+/* Important area */
+.services .boxes .box:hover .icon{
+    background: #fff;
+    color: #4070F4;
+}
+
+.services .boxes .box:hover .topic{
+color: #fff;
+}
+#services a{
+    color: black;
+    
+}
+#services .box:hover
+    a{
+        color: #fff;
+    }
+    
+    
+
+
+/* Reponsive CSS for My Service Section  */
+
+@media (max-width: 1190px){
+    .services .content{
+        width: 90%;
+
+    }
+}
+@media (max-width: 1090px){
+    .services .boxes .box{
+        width: calc(100%/2 - 20px);/* use of it for giving the item number how many iem deserve that width and amrgin btw */
+
+        
+    }
+}
+
+@media (max-width: 626px){
+    .services .boxes .box{
+        width: 100%;
+
+        
+    }
+}
+
+
+
+
+
+
+/* My projects Section start from here */
+.projects .boxes{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.projects .boxes .box{
+    width: calc(100%/3 - 20px);
+    margin: 20px 0;
+    border-radius: 12px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+    padding: 20px 10px;
+    text-align: center;
+    transition: all 0.4s ease;
+
+
+}
+.projects .boxes .box:hover{
+    background: #4070F4;
+    color: #fff;
+}
+
+/* best icon manage code see it  */
+.projects .boxes .box .icon{
+    width: 50px;
+    height: 50px;
+    color: #fff;
+    background:#4070F4 ;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    margin: 0 auto 10px auto;
+    transition: all 0.4s ease;
+}
+.projects .boxes .box:hover .icon{
+    background: #fff;
+    color: #4070F4;
+}
+
+.projects .boxes .box:hover .topic{
+color: #fff;
+}
+
+/* Reponsive CSS for My Service Section  */
+
+@media (max-width: 1190px){
+    .projects .content{
+        width: 90%;
+
+    }
+}
+@media (max-width: 1090px){
+    .projects .boxes .box{
+        width: calc(100%/2 - 20px);/* use of it for giving the item number how many iem deserve that width and amrgin btw */
+
+        
+    }
+}
+
+@media (max-width: 626px){
+    .projects .boxes .box{
+        width: 100%;
+
+        
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/* Contact Me Section Start From Here */
+.contact{
+    background: #F0F8FF;
+    padding: 20px 0;
+
+}
+.contact .text{
+    text-align: center;
+    margin: auto;
+    width: 80%;
+
+}
+.contact button a{
+    color: #fff;
+}
+.contact button:hover a{
+    color: #4070F4;
+    background: #fff;
+}
+@media (max-width: 1090px){
+    .contact .text{
+        
+        width: 90%;
+    
+    }  
+}
+
+@media (max-width: 971px){
+    .contact .text{
+        
+        width: 100%;
+    
+    }  
+}
+
+
+
+/* Footer start from here */
+footer{
+    background: #4070F4;
+    text-align: center;
+    padding: 15px 0;
+    font-family: 'Poppins' , sans-serif;
+
+
+}
+
+footer .text span{
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+
+footer .text span a{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+footer .text span a:hover{
+    text-decoration: underline;
+}
+
+
+/* Scroll Behaviour */
+.scroll-btn i{
+ position: fixed;
+ bottom: 20px;
+ right: 20px;
+ padding: 10px 12px;
+ background: #4070F4;
+ color: #fff;
+ font-size: 18px;
+ border-radius: 6px;
+ box-shadow: 0 5px 10px rgbe(0,0,0,0.15);
+}

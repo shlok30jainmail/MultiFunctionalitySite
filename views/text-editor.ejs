@@ -1,0 +1,37 @@
+<%- include('header.ejs') %>
+
+<div class="text-body">
+<div class="text-wrapper text-editor">
+    <textarea required placeholder="Enter Somthing at here"></textarea>
+<div class="text-file-options">
+    <div class="text-option text-file-name">
+        <label for="">File name</label>
+        <input type="text" placeholder="Enter your file name">
+    </div>
+    <div class="text-option text-save-as">
+        <label for="">Save as</label>
+        <div class="text-select-menu">
+            <select >
+                <option value="text/plain">Text File (.txt)</option>
+                <option value="text/javascript">Js File (.js)</option>
+                <option value="text/html">HTML File (.html)</option>
+                <option value="image/svg+xml">SVG File (.svg)</option>
+                <option value="application/msword">Doc File (.doc)</option>
+                <option value="application/vnd.ms-powerpoint">PPT File (.ppt)</option>
+                <option value="application/pdf">PDF File (.pdf)</option>
+
+
+
+            </select>
+        </div>
+    </div>
+</div>
+<button class="text-save-btn">Save as text file</button>
+</div>
+
+</div>
+<script src="/js/text.js">
+
+</script>
+
+<%- include('footer.ejs') %>
